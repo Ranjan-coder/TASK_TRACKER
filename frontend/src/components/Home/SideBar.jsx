@@ -53,7 +53,7 @@ const SideBar = () => {
             fetch()
           }
 
-    },[])
+    },[Data])
     
 
 
