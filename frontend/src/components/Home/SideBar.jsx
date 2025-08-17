@@ -43,7 +43,8 @@ const SideBar = () => {
     useEffect(() => {
     
         const fetch = async()=>{
-            const response = await axios.get('http://localhost:5055/api/task/alltask',{
+            // const response = await axios.get('http://localhost:5055/api/task/alltask',{
+            const response = await axios.get('https://task-tracker-rkkb.onrender.com/api/task/alltask',{
                 headers,
             })
             setData(response.data.data);            

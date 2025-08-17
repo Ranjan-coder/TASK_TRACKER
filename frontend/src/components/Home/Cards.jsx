@@ -1,5 +1,4 @@
 import React from "react"
-import { CiHeart } from "react-icons/ci";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoAddCircle } from "react-icons/io5";
@@ -16,7 +15,8 @@ const Cards = ({ home,setInputdiv,Data, setUpdatedData }) => {
 
   const handleCompletedTask = async (id)=>{
     try {
-      await axios.put(`http://localhost:5055/api/task/completemarked/${id}`,{},
+      // await axios.put(`http://localhost:5055/api/task/completemarked/${id}`,{},
+      await axios.put(`https://task-tracker-rkkb.onrender.com/api/task/completemarked/${id}`,{},
         {headers}
       )
     } catch (error) {
@@ -36,7 +36,8 @@ const Cards = ({ home,setInputdiv,Data, setUpdatedData }) => {
 
   const handleDelete = async (id)=>{
     try {
-      await axios.delete(`http://localhost:5055/api/task/delete/${id}`,
+      // await axios.delete(`http://localhost:5055/api/task/delete/${id}`,
+      await axios.delete(`https://task-tracker-rkkb.onrender.com/api/task/delete/${id}`,
         {headers}
       )
     } catch (error) {
