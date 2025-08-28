@@ -154,4 +154,4 @@ const GetCompleteTask = async(req,res) =>{
 
 
 
-module.exports = {CreateTask,GetAllTask,DeleteTask,UpdateTask,ImportantTask,CompleteTask,GetImpTask,GetCompleteTask,GetIncompleteTask}
+module.exports = {CreateTask,GetAllTask,DeleteTask,UpdateTask,CompleteTask,GetCompleteTask}
