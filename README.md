@@ -47,9 +47,9 @@ Your frontend will start at: http://localhost:3000
 
  
  # OR 
- do only frontend step backend hosted in render and clone the code from development branch 
 
- git clone -b development https://github.com/Ranjan-coder/TASK_TRACKER.git
+# Frontend Hosted In Vercel 
+https://task-tracker-three-gold.vercel.app
 
 
 # Backend hosted in Render
