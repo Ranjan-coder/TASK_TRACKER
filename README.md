@@ -49,7 +49,7 @@ Your frontend will start at: http://localhost:3000
  # OR 
 
 # Frontend Hosted In Vercel 
-https://task-tracker-three-gold.vercel.app
+frontend url : https://task-tracker-three-gold.vercel.app
 
 
 # Backend hosted in Render
