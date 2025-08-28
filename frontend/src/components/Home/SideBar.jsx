@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { CgNotes } from "react-icons/cg";
-import { MdLabelImportant } from "react-icons/md"
 import { FaCheckDouble } from "react-icons/fa6"
-import { TbNotebookOff } from "react-icons/tb";
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store/Auth';
@@ -47,7 +45,10 @@ const SideBar = () => {
     useEffect(() => {
     
         const fetch = async()=>{
-            const response = await axios.get('http://localhost:5055/api/task/alltask',{
+            // const response = await axios.get('http://localhost:5055/api/task/alltask',{
+            //     headers,
+            // })
+            const response = await axios.get('https://task-tracker-knhi.onrender.com/api/task/alltask',{
                 headers,
             })
             setData(response.data.data);            

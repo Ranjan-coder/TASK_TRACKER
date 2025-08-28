@@ -22,7 +22,8 @@ const InputData = ({inputdiv,setInputdiv,updatedData,setUpdatedData}) => {
     if(Data.title === "" || Data.desc === ""){
       alert("All Fields Are Required");
     }else{
-      await axios.post('http://localhost:5055/api/task/createtask',Data,{headers})
+      // await axios.post('http://localhost:5055/api/task/createtask',Data,{headers})
+      await axios.post('https://task-tracker-knhi.onrender.com/api/task/createtask',Data,{headers})
       setData({title:"",desc:""})
       setInputdiv("hidden")
     }
@@ -37,7 +38,8 @@ const InputData = ({inputdiv,setInputdiv,updatedData,setUpdatedData}) => {
     if(Data.title === "" || Data.desc === ""){
       alert("All Fields Are Required");
     }else{
-      await axios.put(`http://localhost:5055/api/task/update/${updatedData.id}`,Data,{headers})
+      // await axios.put(`http://localhost:5055/api/task/update/${updatedData.id}`,Data,{headers})
+      await axios.put(`https://task-tracker-knhi.onrender.com/api/task/update/${updatedData.id}`,Data,{headers})
       setUpdatedData({
         id: "",
         title: "",

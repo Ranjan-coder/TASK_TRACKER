@@ -11,7 +11,10 @@ const CompletedTasks = () => {
 useEffect(() => {
 
     const fetch = async()=>{
-        const response = await axios.get('http://localhost:5055/api/task/getcompletetask',{
+        // const response = await axios.get('http://localhost:5055/api/task/getcompletetask',{
+        //     headers,
+        // })
+        const response = await axios.get('https://task-tracker-knhi.onrender.com/api/task/getcompletetask',{
             headers,
         })
         setData(response.data.data);     

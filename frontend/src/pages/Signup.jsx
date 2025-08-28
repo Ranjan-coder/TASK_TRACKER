@@ -28,7 +28,8 @@ const Signup = () => {
         alert("All Fields Are Required")
       }
       else{
-        const response = await axios.post('http://localhost:5055/api/signup',Data)
+        // const response = await axios.post('http://localhost:5055/api/signup',Data)
+        const response = await axios.post('https://task-tracker-knhi.onrender.com/api/signup',Data)
         setData({username:"",email:"",password:""})
         alert(response.data.message)
         console.log(response)
